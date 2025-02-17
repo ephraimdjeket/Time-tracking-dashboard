@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* ==========================
+         CSS Variables
+   ========================== */
+
+:root {
+
+/* Primary colors */
+--Blue: hsl(246, 80%, 60%);
+--Light-red: hsl(15, 100%, 70%);
+--Soft-blue : hsl(195, 74%, 62%);
+--Light-red: hsl(348, 100%, 68%);
+--Lime-green: hsl(145, 58%, 55%);
+--Violet: hsl(264, 64%, 52%);
+--Soft-orange: hsl(43, 84%, 65%);
+
+/* Neutral colors */
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+
+/* ==========================
+         CSS Reset
+   ========================== */
+
+   *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-dark-slate-grey);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+/* ==========================
+         Main Content
+   ========================== */
+
+body {
+  min-height: 100vh;
+  background-color: var(--Very-dark-blue);
+  font-family: "Rubik", serif;
+}
+
+.jeremy-report > h1 {
+  color: white;
+  font-weight: 300;
+  font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+}
+
+/* ==========================
+         Mobile view
+   ========================== */
+
+@media screen and (max-width: 26.563rem) {
+  .dashboard-container {
+    width: 327px;
+    margin: auto;
+  }
+
+  #jeremy-robson {
+    height: 203px;
+  }
+
+  .purple-wrapper {
+    display: flex;
+    padding-block: 2.188rem;
+    gap: 1.25rem;
+    justify-content: center;
+    background-color: var(--Blue);
+    border-radius: 15px;
+  }
+
+  .purple-wrapper > img {
+    width: 64px;
+    border-radius: 100%;
+    border: 3px solid white;
+  }
+
+  .jeremy-report > small {
+    color: var(--Desaturated-blue);
+  }
+}
