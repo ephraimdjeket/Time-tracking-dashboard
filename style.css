@@ -8,7 +8,7 @@
 
 /* Primary colors */
 --Blue: hsl(246, 80%, 60%);
---Light-red: hsl(15, 100%, 70%);
+--Light-orange: hsl(15, 100%, 70%);
 --Soft-blue : hsl(195, 74%, 62%);
 --Light-red: hsl(348, 100%, 68%);
 --Lime-green: hsl(145, 58%, 55%);
@@ -87,9 +87,14 @@ body {
    ========================== */
 
 @media screen and (max-width: 26.563rem) {
+
   .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 327px;
     margin: auto;
+    gap: 1.5rem;
   }
 
   #jeremy-robson {
@@ -113,5 +118,23 @@ body {
 
   .jeremy-report > small {
     color: var(--Desaturated-blue);
+  }
+
+  .work {
+    display: flex;
+    height: 160px;
+    width: 100%;
+    background-color: var(--Light-orange);
+    border-radius: 15px;
+    align-items: flex-end;
+  }
+
+  .dashboard-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark-blue);
+    width: 327px;
+    height: 122px;
+    border-radius: 15px;
   }
 }
